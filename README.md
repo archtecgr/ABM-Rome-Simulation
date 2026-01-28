@@ -6,7 +6,7 @@
 **Date:** February 2026
 **Creator:** Orfeas Dialinos
 
-## 1. Introduction & Overview (ODD Protocol)
+## 1. Introduction & Overview
 
 ### 1.1 Purpose
 
