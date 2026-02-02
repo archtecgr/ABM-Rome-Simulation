@@ -36,12 +36,34 @@ At every time step (tick), the following sequence occurs:
 2. **Settlements** spawn traders if their economy allows it.
 3. **Traders** navigate using A* pathfinding to reach a target city.
 4. **Interaction:** Upon arrival, the trader interacts based on the global `Imperial Stability` parameter:
-* **High Stability:** The trader exchanges goods (Trade), increasing both cities' wealth.
-* **Low Stability:** If the cultures are different, the trader raids the city, destroying population and stealing stock (War).
+5 **High Stability:** The trader exchanges goods (Trade), increasing both cities' wealth.
+6 **Low Stability:** If the cultures are different, the trader raids the city, destroying population and stealing stock (War).
+7. **Global Data:** The model calculates the Gini coefficient and updates the Lorenz Curve to visualize inequality.
 
+### 1.4 Visual Conceptual Model
 
-5. **Global Data:** The model calculates the Gini coefficient and updates the Lorenz Curve to visualize inequality.
+The following diagram illustrates the decision logic for the agents:
 
+    A[Start Tick] --> B(Trader Moves via A* Path);
+    B --> C{Arrives at Target City?};
+    C -- No --> B;
+    C -- Yes --> D{Check Imperial Stability};
+    
+    D -- Stability High --> E[<b>Trade Interaction</b><br/>Exchange Goods<br/>Both Cities Grow];
+    
+    D -- Stability Low --> F{Check Cultural Difference};
+    
+    F -- Similar Colors --> E;
+    F -- Different Colors --> G[<b>War Interaction</b><br/>'Raid' Logic Triggered];
+    
+    G --> H[Attacker steals Stock];
+    G --> I[Defender loses Population 1:1];
+    
+    E --> J[Update Lorenz Curve<br/>Calculate Inequality];
+    H --> J;
+    I --> J;
+    
+    J --> A;
 ---
 
 ## 2. Design Concepts
