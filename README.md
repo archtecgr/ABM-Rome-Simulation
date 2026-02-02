@@ -1,10 +1,10 @@
 # The Rise and Fall of Maritime Empires
 
-### An Agent-Based Model of Economic Inequality and Imperial Collapse
+**Version 1.0** | An Agent-Based Model of Economic Inequality and Imperial Collapse
 
-**Course:** Agent-based modelling for archaeologists
-**Date:** February 2026
-**Creator:** Orfeas Dialinos
+![NetLogo](https://img.shields.io/badge/NetLogo-Model-white?style=flat)
+![Agent-based](https://img.shields.io/badge/Model%20type-Agent--based-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 1. Introduction & Overview
 
