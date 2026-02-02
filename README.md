@@ -225,3 +225,9 @@ While code snippets were generated with assistance, the conceptual modeling, par
 2. **Algorithm:** Hart, P. E., Nilsson, N. J., & Raphael, B. (1968). "A Formal Basis for the Heuristic Determination of Minimum Cost Paths". *IEEE Transactions on Systems Science and Cybernetics*.
 3. **Theory:** Turchin, P. (2003). *Historical Dynamics: Why States Rise and Fall*. Princeton University Press. (Used for the concept of imperial stability).
 4. **Methodology:** Grimm, V., et al. (2006). "A standard protocol for describing individual-based and agent-based models". *Ecological Modelling*.
+
+   
+
+<div align="center">
+
+**Made with ❤️ by Orfeas Dialinos**
